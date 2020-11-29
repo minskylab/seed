@@ -34,7 +34,7 @@ build: ## go build
 .PHONY: fmt
 fmt: ## gofumports
 	$(call print-target)
-	gofumports -l -w -local github.com/golang-templates/seed . || true
+	gofumports -l -w -local github.com/minskylab/seed . || true
 
 .PHONY: lint
 lint: ## golangci-lint
